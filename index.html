@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex_Practice</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- css file -->
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body  class="d-flex justify-content-center align-items-center" style="height: 100vh;" >
+    <div class="container mt-5 align-items-center">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6">
+                    <div class="card-body">
+                        <h2 class="mb-4 d-flex justify-content-center">
+                            Change the password
+                        </h2>
+                        <div class="form-group">
+                            <label for="password" class="text_color">Enter Password</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control border-stl" id="password"
+                                    oninput="validatePassword(this.value)">
+                                <div class="input-group-append" >
+                                    <button class="btn border-stl" type="button" id="togglePassword">
+                                        <i id="eye" class="fas fa-eye-slash text-primary" style="font-size: 20px;"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <ul>
+                                <li id="minLength"><i class="fas fa-times
+                                     text-danger"></i> Minimum 8 characters</li>
+                                <li id="uppercase"><i class="fas fa-times
+                                     text-danger"></i> At least one uppercase
+                                    letter</li>
+                                <li id="lowercase"><i class="fas fa-times
+                                     text-danger"></i> At least one lowercase
+                                    letter</li>
+                                <li id="symbol"><i class="fas fa-times
+                                     text-danger"></i>
+                                    At least one symbol (@$!%*?&)
+                                </li>
+                            </ul>
+                        </div>
+                        <span id="errorMessage" class="font-weight-bold
+                         text-danger"></span>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+    </script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js">
+    </script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
