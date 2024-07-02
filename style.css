@@ -8,3 +8,16 @@
 .text_color {
     color: rgb(0, 102, 255);
 }
+
+.blue_text {
+    color: rgb(0, 102, 255);
+}
+
+#togglePassword:hover {
+    border-color: rgb(0, 102, 255);
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
