@@ -23,32 +23,17 @@
                             Change the password
                         </h2>
                         <div class="form-group">
-                            <label for="password" class="text_color">Enter Password</label>
-                            <div class="input-group">
-                                <input type="password" class="form-control border-stl" id="password"
+                            <label for="password" class="text-primary" id="Enter">Enter Password</label>
+                            <div class="input-group border-bottom border-primary" id="border_input">
+                                <input type="password" class="form-control border-0" id="password"
                                     oninput="validatePassword(this.value)">
                                 <div class="input-group-append" >
-                                    <button class="btn border-stl" type="button" id="togglePassword">
+                                    <button class="btn border-0" type="button" id="togglePassword">
                                         <i id="eye" class="fas fa-eye-slash text-primary" style="font-size: 20px;"></i>
                                     </button>
                                 </div>
+                                
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <ul>
-                                <li id="minLength"><i class="fas fa-times
-                                     text-danger"></i> Minimum 8 characters</li>
-                                <li id="uppercase"><i class="fas fa-times
-                                     text-danger"></i> At least one uppercase
-                                    letter</li>
-                                <li id="lowercase"><i class="fas fa-times
-                                     text-danger"></i> At least one lowercase
-                                    letter</li>
-                                <li id="symbol"><i class="fas fa-times
-                                     text-danger"></i>
-                                    At least one symbol (@$!%*?&)
-                                </li>
-                            </ul>
                         </div>
                         <span id="errorMessage" class="font-weight-bold
                          text-muted">Password input is empty</span>
